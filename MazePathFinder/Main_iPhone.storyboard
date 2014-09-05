@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="oWv-rz-sx8">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="NvE-if-wLZ">
+            <objects>
+                <viewController id="oWv-rz-sx8" customClass="LKHomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mo5-OU-QjU"/>
+                        <viewControllerLayoutGuide type="bottom" id="GNR-kh-7V3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iSf-Kj-3zD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ayh-DH-Ohi" customClass="LKMazeView">
+                                <rect key="frame" x="0.0" y="20" width="320" height="426"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tw0-10-hzp">
+                                <rect key="frame" x="0.0" y="446" width="320" height="122"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="122" id="GtP-w5-Mna"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="FCS-qA-29D" kind="embed" id="EB8-9k-1zK"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GNR-kh-7V3" firstAttribute="top" secondItem="Tw0-10-hzp" secondAttribute="bottom" id="EWi-Nt-gmw"/>
+                            <constraint firstItem="Tw0-10-hzp" firstAttribute="leading" secondItem="iSf-Kj-3zD" secondAttribute="leading" id="Fa2-Z7-uS9"/>
+                            <constraint firstItem="Ayh-DH-Ohi" firstAttribute="leading" secondItem="iSf-Kj-3zD" secondAttribute="leading" id="Tso-bq-3DN"/>
+                            <constraint firstItem="Tw0-10-hzp" firstAttribute="top" secondItem="Ayh-DH-Ohi" secondAttribute="bottom" id="eI8-wo-1zN"/>
+                            <constraint firstAttribute="trailing" secondItem="Ayh-DH-Ohi" secondAttribute="trailing" id="ekV-9u-8cT"/>
+                            <constraint firstItem="Ayh-DH-Ohi" firstAttribute="top" secondItem="Mo5-OU-QjU" secondAttribute="bottom" id="j0V-lb-q0i"/>
+                            <constraint firstAttribute="trailing" secondItem="Tw0-10-hzp" secondAttribute="trailing" id="qaB-a5-Fnj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mazeView" destination="Ayh-DH-Ohi" id="lRj-tJ-lpj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yrf-nP-FQ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="457" y="247"/>
+        </scene>
+        <!--Maze Config View Controller-->
+        <scene sceneID="sFQ-sQ-no6">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="FCS-qA-29D" customClass="LKMazeConfigViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PdU-Vh-G7c"/>
+                        <viewControllerLayoutGuide type="bottom" id="BE7-Go-E6l"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4YP-Eb-QnK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="122"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="maze width" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21y-kk-6GY">
+                                <rect key="frame" x="13" y="16" width="74" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.49074388590000001" green="0.49074388590000001" blue="0.49074388590000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="110" minimumValue="10" maximumValue="110" translatesAutoresizingMaskIntoConstraints="NO" id="tRq-HT-SbL">
+                                <rect key="frame" x="13" y="41" width="94" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <action selector="mazeWidthChanged" destination="FCS-qA-29D" eventType="valueChanged" id="xZ6-vn-VEW"/>
+                                </connections>
+                            </stepper>
+                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minimumValue="10" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="jGG-p3-E8O">
+                                <rect key="frame" x="179" y="41" width="94" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <action selector="mazeWidthChanged" destination="FCS-qA-29D" eventType="valueChanged" id="pMg-xu-pp1"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBC-Nf-PMf">
+                                <rect key="frame" x="115" y="45" width="20" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="maze height" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJp-pI-e8b">
+                                <rect key="frame" x="179" y="20" width="79" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.49074388590000001" green="0.49074388590000001" blue="0.49074388590000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zF-2R-ObV">
+                                <rect key="frame" x="281" y="45" width="20" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omZ-Bx-gfS">
+                                <rect key="frame" x="108" y="86" width="105" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Generate Maze">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="generateMaze" destination="FCS-qA-29D" eventType="touchUpInside" id="6VS-yO-Pfy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <connections>
+                        <outlet property="mazeHeightLabel" destination="3zF-2R-ObV" id="MA4-9y-g9e"/>
+                        <outlet property="mazeHeightStepper" destination="jGG-p3-E8O" id="DFY-2h-qKi"/>
+                        <outlet property="mazeWidthLabel" destination="KBC-Nf-PMf" id="Ozm-Ce-yFT"/>
+                        <outlet property="mazeWidthStepper" destination="tRq-HT-SbL" id="zWc-0H-hUu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lm3-qH-zXU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="927" y="613"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
