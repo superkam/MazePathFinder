@@ -13,26 +13,18 @@
 		B9CBFBFA19B968E8003E3514 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9CBFBF819B968E8003E3514 /* InfoPlist.strings */; };
 		B9CBFBFC19B968E8003E3514 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CBFBFB19B968E8003E3514 /* main.m */; };
 		B9CBFC0019B968E8003E3514 /* LKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CBFBFF19B968E8003E3514 /* LKAppDelegate.m */; };
-		B9CBFC0319B968E8003E3514 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9CBFC0119B968E8003E3514 /* Main_iPhone.storyboard */; };
-		B9CBFC0619B968E8003E3514 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9CBFC0419B968E8003E3514 /* Main_iPad.storyboard */; };
-		B9CBFC0919B968E8003E3514 /* LKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CBFC0819B968E8003E3514 /* LKViewController.m */; };
 		B9CBFC0B19B968E8003E3514 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9CBFC0A19B968E8003E3514 /* Images.xcassets */; };
-		B9CBFC1219B968E8003E3514 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CBFC1119B968E8003E3514 /* XCTest.framework */; };
-		B9CBFC1319B968E8003E3514 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CBFBEF19B968E8003E3514 /* Foundation.framework */; };
-		B9CBFC1419B968E8003E3514 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CBFBF319B968E8003E3514 /* UIKit.framework */; };
-		B9CBFC1C19B968E8003E3514 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9CBFC1A19B968E8003E3514 /* InfoPlist.strings */; };
-		B9CBFC1E19B968E8003E3514 /* MazePathFinderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CBFC1D19B968E8003E3514 /* MazePathFinderTests.m */; };
+		B9CBFC2F19B96985003E3514 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9CBFC2D19B96985003E3514 /* Main_iPad.storyboard */; };
+		B9CBFC3019B96985003E3514 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9CBFC2E19B96985003E3514 /* Main_iPhone.storyboard */; };
+		B9CBFC3519B969B0003E3514 /* NSMutableArray+LKMaze.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CBFC3419B969B0003E3514 /* NSMutableArray+LKMaze.m */; };
+		B9CBFC3C19B969B6003E3514 /* LKMazeTile.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CBFC3719B969B6003E3514 /* LKMazeTile.m */; };
+		B9CBFC3D19B969B6003E3514 /* LKMazePathPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CBFC3919B969B6003E3514 /* LKMazePathPoint.m */; };
+		B9CBFC3E19B969B6003E3514 /* LKMazePathFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CBFC3B19B969B6003E3514 /* LKMazePathFinder.m */; };
+		B9CBFC4419B969DD003E3514 /* LKMazeView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CBFC4319B969DD003E3514 /* LKMazeView.m */; };
+		B9CBFC4719B969E2003E3514 /* LKMazePathView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CBFC4619B969E2003E3514 /* LKMazePathView.m */; };
+		B9CBFC4C19B969F8003E3514 /* LKHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CBFC4919B969F8003E3514 /* LKHomeViewController.m */; };
+		B9CBFC4D19B969F8003E3514 /* LKMazeConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CBFC4B19B969F8003E3514 /* LKMazeConfigViewController.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		B9CBFC1519B968E8003E3514 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B9CBFBE419B968E8003E3514 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B9CBFBEB19B968E8003E3514;
-			remoteInfo = MazePathFinder;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B9CBFBEC19B968E8003E3514 /* MazePathFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MazePathFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,16 +37,26 @@
 		B9CBFBFD19B968E8003E3514 /* MazePathFinder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MazePathFinder-Prefix.pch"; sourceTree = "<group>"; };
 		B9CBFBFE19B968E8003E3514 /* LKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKAppDelegate.h; sourceTree = "<group>"; };
 		B9CBFBFF19B968E8003E3514 /* LKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKAppDelegate.m; sourceTree = "<group>"; };
-		B9CBFC0219B968E8003E3514 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		B9CBFC0519B968E8003E3514 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		B9CBFC0719B968E8003E3514 /* LKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKViewController.h; sourceTree = "<group>"; };
-		B9CBFC0819B968E8003E3514 /* LKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKViewController.m; sourceTree = "<group>"; };
 		B9CBFC0A19B968E8003E3514 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B9CBFC1019B968E8003E3514 /* MazePathFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MazePathFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9CBFC1119B968E8003E3514 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		B9CBFC1919B968E8003E3514 /* MazePathFinderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MazePathFinderTests-Info.plist"; sourceTree = "<group>"; };
-		B9CBFC1B19B968E8003E3514 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B9CBFC1D19B968E8003E3514 /* MazePathFinderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MazePathFinderTests.m; sourceTree = "<group>"; };
+		B9CBFC2D19B96985003E3514 /* Main_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPad.storyboard; sourceTree = "<group>"; };
+		B9CBFC2E19B96985003E3514 /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
+		B9CBFC3319B969B0003E3514 /* NSMutableArray+LKMaze.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+LKMaze.h"; sourceTree = "<group>"; };
+		B9CBFC3419B969B0003E3514 /* NSMutableArray+LKMaze.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+LKMaze.m"; sourceTree = "<group>"; };
+		B9CBFC3619B969B6003E3514 /* LKMazeTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKMazeTile.h; sourceTree = "<group>"; };
+		B9CBFC3719B969B6003E3514 /* LKMazeTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKMazeTile.m; sourceTree = "<group>"; };
+		B9CBFC3819B969B6003E3514 /* LKMazePathPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKMazePathPoint.h; sourceTree = "<group>"; };
+		B9CBFC3919B969B6003E3514 /* LKMazePathPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKMazePathPoint.m; sourceTree = "<group>"; };
+		B9CBFC3A19B969B6003E3514 /* LKMazePathFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKMazePathFinder.h; sourceTree = "<group>"; };
+		B9CBFC3B19B969B6003E3514 /* LKMazePathFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKMazePathFinder.m; sourceTree = "<group>"; };
+		B9CBFC4219B969DD003E3514 /* LKMazeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKMazeView.h; sourceTree = "<group>"; };
+		B9CBFC4319B969DD003E3514 /* LKMazeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKMazeView.m; sourceTree = "<group>"; };
+		B9CBFC4519B969E2003E3514 /* LKMazePathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKMazePathView.h; sourceTree = "<group>"; };
+		B9CBFC4619B969E2003E3514 /* LKMazePathView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKMazePathView.m; sourceTree = "<group>"; };
+		B9CBFC4819B969F8003E3514 /* LKHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKHomeViewController.h; sourceTree = "<group>"; };
+		B9CBFC4919B969F8003E3514 /* LKHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKHomeViewController.m; sourceTree = "<group>"; };
+		B9CBFC4A19B969F8003E3514 /* LKMazeConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKMazeConfigViewController.h; sourceTree = "<group>"; };
+		B9CBFC4B19B969F8003E3514 /* LKMazeConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKMazeConfigViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,16 +70,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B9CBFC0D19B968E8003E3514 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B9CBFC1219B968E8003E3514 /* XCTest.framework in Frameworks */,
-				B9CBFC1419B968E8003E3514 /* UIKit.framework in Frameworks */,
-				B9CBFC1319B968E8003E3514 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -85,7 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				B9CBFBF519B968E8003E3514 /* MazePathFinder */,
-				B9CBFC1719B968E8003E3514 /* MazePathFinderTests */,
 				B9CBFBEE19B968E8003E3514 /* Frameworks */,
 				B9CBFBED19B968E8003E3514 /* Products */,
 			);
@@ -95,7 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				B9CBFBEC19B968E8003E3514 /* MazePathFinder.app */,
-				B9CBFC1019B968E8003E3514 /* MazePathFinderTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,11 +106,12 @@
 			children = (
 				B9CBFBFE19B968E8003E3514 /* LKAppDelegate.h */,
 				B9CBFBFF19B968E8003E3514 /* LKAppDelegate.m */,
-				B9CBFC0119B968E8003E3514 /* Main_iPhone.storyboard */,
-				B9CBFC0419B968E8003E3514 /* Main_iPad.storyboard */,
-				B9CBFC0719B968E8003E3514 /* LKViewController.h */,
-				B9CBFC0819B968E8003E3514 /* LKViewController.m */,
 				B9CBFC0A19B968E8003E3514 /* Images.xcassets */,
+				B9CBFC2D19B96985003E3514 /* Main_iPad.storyboard */,
+				B9CBFC2E19B96985003E3514 /* Main_iPhone.storyboard */,
+				B9CBFC3119B9699A003E3514 /* Models */,
+				B9CBFC3F19B969C2003E3514 /* Views */,
+				B9CBFC4E19B969FB003E3514 /* ViewControllers */,
 				B9CBFBF619B968E8003E3514 /* Supporting Files */,
 			);
 			path = MazePathFinder;
@@ -137,22 +128,65 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B9CBFC1719B968E8003E3514 /* MazePathFinderTests */ = {
+		B9CBFC3119B9699A003E3514 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B9CBFC1D19B968E8003E3514 /* MazePathFinderTests.m */,
-				B9CBFC1819B968E8003E3514 /* Supporting Files */,
+				B9CBFC3219B969A9003E3514 /* Categories */,
+				B9CBFC3619B969B6003E3514 /* LKMazeTile.h */,
+				B9CBFC3719B969B6003E3514 /* LKMazeTile.m */,
+				B9CBFC3819B969B6003E3514 /* LKMazePathPoint.h */,
+				B9CBFC3919B969B6003E3514 /* LKMazePathPoint.m */,
+				B9CBFC3A19B969B6003E3514 /* LKMazePathFinder.h */,
+				B9CBFC3B19B969B6003E3514 /* LKMazePathFinder.m */,
 			);
-			path = MazePathFinderTests;
+			name = Models;
 			sourceTree = "<group>";
 		};
-		B9CBFC1819B968E8003E3514 /* Supporting Files */ = {
+		B9CBFC3219B969A9003E3514 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				B9CBFC1919B968E8003E3514 /* MazePathFinderTests-Info.plist */,
-				B9CBFC1A19B968E8003E3514 /* InfoPlist.strings */,
+				B9CBFC3319B969B0003E3514 /* NSMutableArray+LKMaze.h */,
+				B9CBFC3419B969B0003E3514 /* NSMutableArray+LKMaze.m */,
 			);
-			name = "Supporting Files";
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		B9CBFC3F19B969C2003E3514 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B9CBFC4119B969D4003E3514 /* MazeView */,
+				B9CBFC4019B969CD003E3514 /* MazePathView */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B9CBFC4019B969CD003E3514 /* MazePathView */ = {
+			isa = PBXGroup;
+			children = (
+				B9CBFC4519B969E2003E3514 /* LKMazePathView.h */,
+				B9CBFC4619B969E2003E3514 /* LKMazePathView.m */,
+			);
+			name = MazePathView;
+			sourceTree = "<group>";
+		};
+		B9CBFC4119B969D4003E3514 /* MazeView */ = {
+			isa = PBXGroup;
+			children = (
+				B9CBFC4219B969DD003E3514 /* LKMazeView.h */,
+				B9CBFC4319B969DD003E3514 /* LKMazeView.m */,
+			);
+			name = MazeView;
+			sourceTree = "<group>";
+		};
+		B9CBFC4E19B969FB003E3514 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B9CBFC4819B969F8003E3514 /* LKHomeViewController.h */,
+				B9CBFC4919B969F8003E3514 /* LKHomeViewController.m */,
+				B9CBFC4A19B969F8003E3514 /* LKMazeConfigViewController.h */,
+				B9CBFC4B19B969F8003E3514 /* LKMazeConfigViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,24 +209,6 @@
 			productReference = B9CBFBEC19B968E8003E3514 /* MazePathFinder.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B9CBFC0F19B968E8003E3514 /* MazePathFinderTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B9CBFC2419B968E8003E3514 /* Build configuration list for PBXNativeTarget "MazePathFinderTests" */;
-			buildPhases = (
-				B9CBFC0C19B968E8003E3514 /* Sources */,
-				B9CBFC0D19B968E8003E3514 /* Frameworks */,
-				B9CBFC0E19B968E8003E3514 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B9CBFC1619B968E8003E3514 /* PBXTargetDependency */,
-			);
-			name = MazePathFinderTests;
-			productName = MazePathFinderTests;
-			productReference = B9CBFC1019B968E8003E3514 /* MazePathFinderTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,11 +218,6 @@
 				CLASSPREFIX = LK;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "The Kam's";
-				TargetAttributes = {
-					B9CBFC0F19B968E8003E3514 = {
-						TestTargetID = B9CBFBEB19B968E8003E3514;
-					};
-				};
 			};
 			buildConfigurationList = B9CBFBE719B968E8003E3514 /* Build configuration list for PBXProject "MazePathFinder" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -222,7 +233,6 @@
 			projectRoot = "";
 			targets = (
 				B9CBFBEB19B968E8003E3514 /* MazePathFinder */,
-				B9CBFC0F19B968E8003E3514 /* MazePathFinderTests */,
 			);
 		};
 /* End PBXProject section */
@@ -232,18 +242,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9CBFC0619B968E8003E3514 /* Main_iPad.storyboard in Resources */,
+				B9CBFC3019B96985003E3514 /* Main_iPhone.storyboard in Resources */,
+				B9CBFC2F19B96985003E3514 /* Main_iPad.storyboard in Resources */,
 				B9CBFC0B19B968E8003E3514 /* Images.xcassets in Resources */,
-				B9CBFC0319B968E8003E3514 /* Main_iPhone.storyboard in Resources */,
 				B9CBFBFA19B968E8003E3514 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B9CBFC0E19B968E8003E3514 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B9CBFC1C19B968E8003E3514 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,59 +256,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9CBFC4D19B969F8003E3514 /* LKMazeConfigViewController.m in Sources */,
+				B9CBFC3E19B969B6003E3514 /* LKMazePathFinder.m in Sources */,
 				B9CBFBFC19B968E8003E3514 /* main.m in Sources */,
+				B9CBFC3C19B969B6003E3514 /* LKMazeTile.m in Sources */,
+				B9CBFC3D19B969B6003E3514 /* LKMazePathPoint.m in Sources */,
+				B9CBFC4C19B969F8003E3514 /* LKHomeViewController.m in Sources */,
+				B9CBFC3519B969B0003E3514 /* NSMutableArray+LKMaze.m in Sources */,
+				B9CBFC4419B969DD003E3514 /* LKMazeView.m in Sources */,
 				B9CBFC0019B968E8003E3514 /* LKAppDelegate.m in Sources */,
-				B9CBFC0919B968E8003E3514 /* LKViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B9CBFC0C19B968E8003E3514 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B9CBFC1E19B968E8003E3514 /* MazePathFinderTests.m in Sources */,
+				B9CBFC4719B969E2003E3514 /* LKMazePathView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B9CBFC1619B968E8003E3514 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B9CBFBEB19B968E8003E3514 /* MazePathFinder */;
-			targetProxy = B9CBFC1519B968E8003E3514 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B9CBFBF819B968E8003E3514 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B9CBFBF919B968E8003E3514 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		B9CBFC0119B968E8003E3514 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B9CBFC0219B968E8003E3514 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		B9CBFC0419B968E8003E3514 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B9CBFC0519B968E8003E3514 /* Base */,
-			);
-			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		B9CBFC1A19B968E8003E3514 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B9CBFC1B19B968E8003E3514 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -412,46 +381,6 @@
 			};
 			name = Release;
 		};
-		B9CBFC2519B968E8003E3514 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MazePathFinder.app/MazePathFinder";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MazePathFinder/MazePathFinder-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "MazePathFinderTests/MazePathFinderTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		B9CBFC2619B968E8003E3514 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MazePathFinder.app/MazePathFinder";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MazePathFinder/MazePathFinder-Prefix.pch";
-				INFOPLIST_FILE = "MazePathFinderTests/MazePathFinderTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -469,14 +398,6 @@
 			buildConfigurations = (
 				B9CBFC2219B968E8003E3514 /* Debug */,
 				B9CBFC2319B968E8003E3514 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		B9CBFC2419B968E8003E3514 /* Build configuration list for PBXNativeTarget "MazePathFinderTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B9CBFC2519B968E8003E3514 /* Debug */,
-				B9CBFC2619B968E8003E3514 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
